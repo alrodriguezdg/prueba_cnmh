@@ -1,12 +1,10 @@
 import React from 'react';
 import Canvas from './Components/Canvas'
 
-style={{}}
-
 
 function App() {
   return (
-    <div className="" style={{max-width: '1000px'}}>
+    <div className="">
       <Canvas/>
     </div>
   );
