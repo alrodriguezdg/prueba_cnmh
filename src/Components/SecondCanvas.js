@@ -6,7 +6,7 @@ import { Typography } from "@material-ui/core";
 const SecondCanvas = React.forwardRef((props, ref) => {
   return (
     <div>
-      <Typography variant="h5" color="primary" className={styles.title}>CANVAS RESULT</Typography>
+      <Typography variant="h5" color="primary" className={styles.title}>RESULTADO</Typography>
       <CanvasDraw hideGrid={true} disabled={true} canvasWidth={500} canvasHeight={500} ref={ref} className={styles.draw} />
     </div>
   );

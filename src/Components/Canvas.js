@@ -10,7 +10,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const Canvas = () => {
-  const [initial, setInitial] = useState("#ee5253");
+  const [initial, setInitial] = useState("#000");
   const [color, setColor] = useState({});
 
   const [brush, setBrush] = useState(10);
@@ -67,7 +67,7 @@ const Canvas = () => {
         </Typography>
 
         <TextField
-          label="Brush Size"
+          label="Tamaño de pincel"
           type="number"
           variant="outlined"
           min={1}
@@ -77,7 +77,7 @@ const Canvas = () => {
         />
         <hr />
         <TextField
-          label="Width"
+          label="Ancho de Lienzo"
           type="number"
           variant="outlined"
           min={50}
@@ -87,7 +87,7 @@ const Canvas = () => {
         />
         <hr />
         <TextField
-          label="Height"
+          label="Alto de Lienzo"
           type="number"
           variant="outlined"
           min={50}
@@ -108,7 +108,7 @@ const Canvas = () => {
             color="secondary"
             startIcon={<SaveAltIcon />}
           >
-            SAVE
+            GUARDAR
           </Button>
           <Button
             onClick={handleClear}
@@ -116,7 +116,7 @@ const Canvas = () => {
             color="secondary"
             startIcon={<DeleteIcon />}
           >
-            CLEAN
+            BORRAR
           </Button>
           <Button
             onClick={handleBack}
@@ -124,12 +124,12 @@ const Canvas = () => {
             color="secondary"
             startIcon={<ArrowBackIcon />}
           >
-            BACK
+            ATRÁS
           </Button>
         </ButtonGroup>
 
         <Typography variant="h6" color="primary" className={Styles.Title}>
-          Choose the color
+          Elegir Color
         </Typography>
         <InputColor
           initialValue={initial}
@@ -140,7 +140,7 @@ const Canvas = () => {
 
       <Grid item lg={5} md={8} sm={12} xs={12}>
         <Typography variant="h5" color="primary" className={Styles.Title}>
-          CANVAS DRAW
+          LIENZO
         </Typography>
         <CanvasDraw
           brushRadius={brush}
@@ -163,7 +163,7 @@ const Canvas = () => {
         color="secondary"
         startIcon={<SaveAltIcon />}
       >
-        DOWNLOAD
+        DESCARGAR
           </Button>
     </Grid>
   );

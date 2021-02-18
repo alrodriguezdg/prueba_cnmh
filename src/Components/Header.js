@@ -4,10 +4,10 @@ import GestureIcon from "@material-ui/icons/Gesture";
 
 const Header = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" style={{background: '#000'}}>
       <Toolbar>
         <GestureIcon/>
-        <Typography variant="h6">Canvas para descargar</Typography>
+        <Typography variant="h6">Prueba Centro Nacional de Memoria Histórica</Typography>
       </Toolbar>
     </AppBar>
   );
